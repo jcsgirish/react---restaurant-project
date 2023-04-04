@@ -1,0 +1,99 @@
+body {
+    margin: 0.5rem;
+    text-align: center;
+    font-weight: bolder;
+    background-image: url('https://b.zmtcdn.com/data/reviews_photos/e9d/a9ebdad4a3d856c21ed006f941c80e9d_1564279981.jpg?fit=around|750:500&crop=750:500;*,*');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  h1 {
+    color: rgb(235, 204, 32);
+  }
+  h2{
+    color: rgb(248, 221, 12);
+  }
+ 
+  /* Box styles */
+  div.box {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1300px;
+  }
+
+  /* Button styles */
+  button {
+    margin: 3rem;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    color:rgb(160, 29, 29);
+    font-weight: bold;
+  }
+  
+
+  
+  /* List styles */
+  ul {
+    list-style-type: decimal;
+   background-color: rgb(255, 255, 255);
+    border: 2px;
+    padding: 0px;
+    max-width: 500px;
+    margin: 0 auto 1rem;
+    border-radius: 1rem;
+  }
+  
+  li {
+    color: rgb(0, 0, 0);
+    margin: 1px;
+    font-weight: 900;
+  }
+  label {
+  
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin-right: 10px;
+    color: rgb(108, 196, 255);
+    font-weight: bold;
+  }
+  
+  input {
+  
+    display: inline-block;
+    width: 200px;
+  }
+  input.deletebutton{
+    width: 70px;
+    margin: 3px;
+    border-radius: 1rem;
+    background-color: red;
+
+  }
+  input.editbutton{
+    width: 70px;
+    margin: 3px;
+    border-radius: 1rem;
+    background-color:blue;
+  }
+    /* Media queries */
+    @media only screen and (max-width: 768px) {
+        div.box {
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        button {
+          margin: 1rem;
+        }
+        
+        ul {
+          width: 100%;
+        }
+    }
+  
