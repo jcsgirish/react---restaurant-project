@@ -1,14 +1,25 @@
-import React from 'react';
-import Restaurant from './components/Users'
-import OrderList from './components/OrderList';
+import React ,{useState} from 'react';
+import OrderForm from './components/Users';
+import OrderDetails from './components/OrderList';
 
-function App() {
+const  App=() =>{
+  const [usersList, setUsersList] = useState([]);
+
+  const addCustomerHandler = ( cPrice, cDish, cTable) => {
+    setUsersList((prev) => {
+      return [
+        ...prev,
+        {  price: cPrice, dish: cDish, table: cTable },
+      ];
+    });
+  };
+
   return (
-    <div>
-      <Restaurant />
-    
-    </div>
-  );
+    <React.Fragment>
+      <OrderForm addToBill={addCustomerHandler} />
+      <OrderDetails customers ={usersList} />
+    </React.Fragment>
+  ) 
 }
 
 export default App;

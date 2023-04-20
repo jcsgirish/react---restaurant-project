@@ -62,12 +62,7 @@ body {
     color: rgb(108, 196, 255);
     font-weight: bold;
   }
-  
-  input {
-  
-    display: inline-block;
-    width: 200px;
-  }
+
   input.deletebutton{
     width: 70px;
     margin: 3px;
